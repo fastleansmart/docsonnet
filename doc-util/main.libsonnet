@@ -4,7 +4,7 @@
   '#':
     d.pkg(
       name='doc-util',
-      url='github.com/jsonnet-libs/docsonnet/doc-util',
+      url='github.com/fastleansmart/docsonnet/doc-util',
       help=|||
         `doc-util` provides a Jsonnet interface for `docsonnet`,
          a Jsonnet API doc generator that uses structured data instead of comments.

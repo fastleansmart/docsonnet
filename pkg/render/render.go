@@ -7,10 +7,10 @@ import (
 	"sort"
 	"strings"
 
+	"github.com/fastleansmart/docsonnet/pkg/docsonnet"
+	"github.com/fastleansmart/docsonnet/pkg/md"
+	"github.com/fastleansmart/docsonnet/pkg/slug"
 	"github.com/google/go-jsonnet/formatter"
-	"github.com/jsonnet-libs/docsonnet/pkg/docsonnet"
-	"github.com/jsonnet-libs/docsonnet/pkg/md"
-	"github.com/jsonnet-libs/docsonnet/pkg/slug"
 )
 
 type Opts struct {

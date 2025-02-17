@@ -75,7 +75,6 @@ Such an object might need a description as well, so you can also annotate it:
 
 Again, the naming rule `#` joined with the fields name must be followed, so the `docsonnet` utility can automatically join together the contents of your object with its annotated description.
 
-
 ## Usage
 
 Once you have a Jsonnet library annotated with `doc-util`, you can generate the docs using one of three ways:
@@ -87,13 +86,13 @@ Once you have a Jsonnet library annotated with `doc-util`, you can generate the 
 ### Jsonnet renderer
 
 The docs can be rendered using Jsonnet with the
-[render](https://github.com/jsonnet-libs/docsonnet/tree/master/doc-util#fn-render) function.
+[render](https://github.com/fastleansmart/docsonnet/tree/master/doc-util#fn-render) function.
 
 In your library source, add a file `docs.jsonnet` (assuming your library entrypoint is `main.libsonnet`) with the
 following contents:
 
 ```jsonnet
-local d = import 'github.com/jsonnet-libs/docsonnet/doc-util/main.libsonnet';
+local d = import 'github.com/fastleansmart/docsonnet/doc-util/main.libsonnet';
 d.render(import 'main.libsonnet')
 ```
 
@@ -113,7 +112,7 @@ library, avoiding the need to have `doc-util` installed.
 You can install the `docsonnet` binary using `go install`:
 
 ```
-go install github.com/jsonnet-libs/docsonnet@master
+go install github.com/fastleansmart/docsonnet@master
 ```
 
 Once the binary is installed, you can generate the docs by passing it the main entrypoint to your Jsonnet library:
@@ -134,7 +133,6 @@ binary if you do not wish to set up go or install the binary locally:
 ```
 docker run --rm -v "$(pwd):/src" -v "$(pwd)/docs:/docs" jsonnetlibs/docsonnet /src/main.libsonnet
 ```
-
 
 ## FAQ
 
