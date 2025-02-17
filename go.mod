@@ -1,4 +1,4 @@
-module github.com/jsonnet-libs/docsonnet
+module github.com/fastleansmart/docsonnet
 
 go 1.19
 
